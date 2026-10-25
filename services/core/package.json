@@ -1,0 +1,26 @@
+{
+  "name": "@todo-pand/core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@todo-pand/contracts": "workspace:*",
+    "@todo-pand/sdk": "workspace:*",
+    "@pand/config": "link:/Users/mns/Desktop/projects/PAND/packages/config",
+    "@pand/db": "link:/Users/mns/Desktop/projects/PAND/packages/db",
+    "@pand/logger": "link:/Users/mns/Desktop/projects/PAND/packages/logger",
+    "@pand/service": "link:/Users/mns/Desktop/projects/PAND/packages/service",
+    "@pand/telemetry": "link:/Users/mns/Desktop/projects/PAND/packages/telemetry",
+    "drizzle-orm": "^0.39.3",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@pand/testing": "link:/Users/mns/Desktop/projects/PAND/packages/testing",
+    "drizzle-kit": "^0.30.4"
+  }
+}

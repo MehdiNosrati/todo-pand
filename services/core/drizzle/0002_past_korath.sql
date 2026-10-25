@@ -1,0 +1,2 @@
+ALTER TABLE "core"."projects" ADD COLUMN "owner_id" varchar(255) DEFAULT 'unclaimed' NOT NULL;--> statement-breakpoint
+ALTER TABLE "core"."todos" ADD COLUMN "owner_id" varchar(255) DEFAULT 'unclaimed' NOT NULL;

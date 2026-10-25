@@ -1,0 +1,30 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "node -e \"console.log('web ok')\""
+  },
+  "dependencies": {
+    "@pand/auth": "link:/Users/mns/Desktop/projects/PAND/packages/auth",
+    "@pand/ui": "link:/Users/mns/Desktop/projects/PAND/packages/ui",
+    "@tanstack/react-query": "^5.66.9",
+    "@todo-pand/sdk": "workspace:*",
+    "lucide-react": "^0.475.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.7.3",
+    "vite": "^6.2.0"
+  }
+}

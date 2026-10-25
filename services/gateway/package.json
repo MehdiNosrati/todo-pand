@@ -1,0 +1,18 @@
+{
+  "name": "@todo-pand/gateway",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "test": "node -e \"console.log('gateway ok')\""
+  },
+  "dependencies": {
+    "@pand/auth": "link:/Users/mns/Desktop/projects/PAND/packages/auth",
+    "@pand/config": "link:/Users/mns/Desktop/projects/PAND/packages/config",
+    "@pand/db": "link:/Users/mns/Desktop/projects/PAND/packages/db",
+    "@pand/gateway": "link:/Users/mns/Desktop/projects/PAND/packages/gateway",
+    "@pand/service": "link:/Users/mns/Desktop/projects/PAND/packages/service"
+  }
+}

@@ -1,0 +1,23 @@
+import tailwindcss from "@tailwindcss/vite";
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
+
+const gatewayPort = Number(process.env.GATEWAY_PORT ?? 4001);
+const adminPort = Number(process.env.PORT ?? 4003);
+const webPort = adminPort - 1;
+
+export default defineConfig({
+  plugins: [tailwindcss(), react()],
+  server: {
+    port: adminPort,
+    proxy: {
+      "/api": {
+        target: `http://localhost:${gatewayPort}`,
+        changeOrigin: true,
+        headers: {
+          origin: `http://localhost:${webPort}`,
+        },
+      },
+    },
+  },
+});
